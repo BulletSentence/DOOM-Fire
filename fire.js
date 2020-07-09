@@ -19,7 +19,22 @@ function calculateFirePropagation() {
 }
 
 function renderFire() {
+    let html = '<table cellpadding=0 cellspacing=0>'
 
+    for (let row = 0; row < fireHeight; row++){
+        html += '<tr>'  
+
+        for (let column = 0; column < fireWidth; column++){
+            const pixelIndex = column + (fireWidth * row)
+
+            html = '<td>'
+            html = '</td>'
+        }
+
+        html += '</tr>'
+    }
+
+    html += '</table>'
 }
 
 start()
